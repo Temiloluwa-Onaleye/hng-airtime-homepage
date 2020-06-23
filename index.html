@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./variables.css" />
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body class="display">
+    <section class="first">
+        <div class="logo">
+            <img src="hng-logo.svg" alt="Hng logo">
+        </div>
+        <div class="functions">
+
+            <p class="home">HOME</p>
+            <p>TRACKS</p>
+            <p>TRANSFER</p>
+            <p class="settings">SETTINGS</p>
+            <p>LOGOUT</p>
+
+        </div>
+    </section>
+    <section class="second">
+        <div>
+            <h1>Beneficiary</h1>
+
+
+            <div class="container">
+                <form name="registerForm" class="formBlock">
+                    <h2 class="formTitle">Purchase airtime</h2>
+                    <div>
+                        <label>Phone number:</label>
+                        <input type="tel" id="number" placeholder="number" autocomplete="off" />
+                    </div>
+                   
+                    <div>
+                        <label>Networks:</label>
+                        <select name="" id="cusSelectbox">
+                            <option value="select">select</option>
+                            <option value="glo">glo</option>
+                            <option value="mtn">mtn</option>
+                            <option value="airtel">airtel</option>
+                            <option value="9-mobile">9-mobile</option>
+                            <option value="smile">smile</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>amount:</label>
+                        <select name="" id="cusSelectbox">
+                            <option value="select">select</option>
+                            <option value="100">100</option>
+                            <option value="200">200</option>
+                            <option value="500">500</option>
+                            <option value="700">700</option>
+                            <option value="1000">1000</option>
+                        </select>
+                    </div>
+                     <div>
+                        <label>Pin:</label>
+                        <input type="password" id="password" placeholder="Pin" />
+                    </div>
+                    <div class="btnBlock">
+                        <button type="submit" onclick="return validateRegister();" class="btn">Submit</button>
+                    </div>
+                    <div class="errorBlock">
+                        <p id="regisErr"></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <h6>Thank you for using this platform</h6>
+        </div>
+        <div>
+        </div>
+
+    </section>
+</body>
+
+</html>
